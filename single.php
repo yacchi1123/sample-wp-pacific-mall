@@ -6,12 +6,12 @@
   <meta name="keywords" content="共通キーワード" />
   <meta name="description" content="共通ディスクリプション" />
   <title>PACIFIC MALL DEVELOPMENT</title>
-  <link rel="shortcut icon" href="./assets/images/common/favicon.ico" />
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/common/favicon.ico" />
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Vollkorn:400i" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
-  <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="./assets/js/bundle.js"></script>
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/styles.css" />
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/bundle.js"></script>
 </head>
 <body>
   <div class="container">
@@ -19,8 +19,8 @@
       <div class="header-inner">
         <div class="logo">
           <a class="logo-header" href="/">
-            <img src="./assets/images/common/logo-main.svg" class="main-logo" alt="PACIFIC MALL DEVELOPMENT" />
-            <img src="./assets/images/common/logo-fixed.svg" class="fixed-logo" alt="PACIFIC MALL DEVELOPMENT" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-main.svg" class="main-logo" alt="PACIFIC MALL DEVELOPMENT" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-fixed.svg" class="fixed-logo" alt="PACIFIC MALL DEVELOPMENT" />
           </a>
         </div>
         <button class="toggle-menu js-toggoleNav">
@@ -67,7 +67,7 @@
         <main>
           <div class="page-contents">
             <div class="page-head">
-              <img src="./assets/images/bg-page-news.jpg" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-page-news.jpg" alt="" />
               <div class="wrapper">
                 <span class="page-title-en"></span>
                 <h2 class="page-title">ニュースリリース</h2>
@@ -79,13 +79,10 @@
                   <div class="main-container">
                     <div class="main-wrapper">
                       <div class="news">
-                        <time class="time">2019.01.14</time>
-                        <p class='title'>インド 消費者向けアプリ配信サービス大手のメカ・インディアと業務提携開始</p>
+                        <time class="time"><?php the_time('Y.m.d'); ?></time>
+                        <p class='title'><?php the_title(); ?></p>
                         <div class="news-body">
-                          <p>
-                            パシフィックモール株式会社（以下、当社）は、インド共和国（以下、インド）において、Mecha-India（以下、メカ・インディア）との協業を開始します。<br />
-                            Mecha-Indiaは、インドにおける配車サービス大手であり、電子決済サービス事業のMECHA PAYを展開しています。今般、当社ショッピングモールにおいて、MECHA PAYを活用し、お客さまの利便性向上に関する様々な取り組みを行ってまいります。
-                          </p>
+                          <?php the_content(); ?>
                         </div>
                       </div>
                       <div class="more-news">
@@ -109,7 +106,7 @@
       <div class="footerContents">
         <div class="footerContents-contact">
           <div class="enterprise-logo">
-            <img src="./assets/images/svg/logo-footer.svg" alt="PACIFIC MALL DEVELOPMENT" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-footer.svg" alt="PACIFIC MALL DEVELOPMENT" />
           </div>
           <div class="enterprise-detail">
             <p class="name">パシフィックモール開発株式会社</p>
